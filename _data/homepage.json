@@ -1,0 +1,19 @@
+{
+   "premier-titre": "Mathis Barré",
+   "sous-titre": "&lsaquo; Artisan du web /&rsaquo;",
+   "introduction": "Je suis un jeune apprentis developpeur proposant mes service à prix libre afin de pratiquer à condition réels. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nisi.",
+   "serviceq1" : "Vous êtes une association ?",
+   "service-q2" : "Vous êtes un.e particulier.ère ?",
+   "service-q3" : "Vous êtes une petite entreprise ?",
+   "service-titre": "&lsaquo;h2&rsaquo; A la recherche d'un site web ? &lsaquo;/h2&rsaquo;",
+   "service-description": "Un blog ? Un cv en ligne ? Une page pour un évenement ? Ou tout simplement un site pour votre structure avec vos informations, vos actualités, vos plannings,votre page de contact. Je peux faire tous cela !",
+   "creations-titre": "Mes dernières créations",
+   "question-titre": "Questions fréquentes",
+   "questions-reponses": [
+      {
+         "question": "Quelles sont les tarifs ?",
+         "reponse": "Les sites que je produit sont à prix libre, sous forme de don une fois le projet achevé"
+      }
+   ],
+   "contact-title": "Intéréssé ? Contactez-moi !"
+}

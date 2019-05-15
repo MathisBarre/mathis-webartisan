@@ -1,0 +1,83 @@
+---
+layout: skeleton
+---
+
+{% assign homeData = site.data.homepage %}
+
+<section class="section-presentation">
+   <div class="infos-presentations">
+      <h1>{{ homeData.premier-titre }}</h1>
+      <h2 class="subtitle">{{ homeData.sous-titre }}</h2>
+      <p>{{ homeData.introduction }}</p>
+   </div>
+   <figure class="presentation-figure">
+      <img src="/assets/img/undraw_developer_activity.svg" alt="Illustration d'un developpeur entrain de travailler">
+      <figcaption>
+         undraw.co
+      </figcaption>
+   </figure>
+</section>
+
+<section class="section-services">
+   <div class="services-questions-wrapper">
+      <p class="services-questions">{{ homeData.serviceq1 }}</p>
+      <p class="services-questions">{{ homeData.service-q2 }}</p>
+      <p class="services-questions">{{ homeData.service-q3 }}</p>
+   </div>
+   <div class="services-description">
+      <h2>{{ homeData.service-titre }}</h2>
+      <p> {{ homeData.service-description }} </p>
+   </div>
+</section>
+
+<section class="section-creations">
+   <h2>{{ homeData.creations-titre }}</h2>
+   {% for creation in site.creations %}
+   <div class="a_creation">
+      <div class="creation-img"></div>
+      <div class="creation-description">
+         <h3>{{ creation.title }}</h3>
+         <p>{{ creation.description }}</p>
+         <a class="creation-link" href="{{ creation.url }}">En savoir plus</a>
+      </div>
+   </div>
+   {% endfor %}
+</section>
+
+<section class="section-frequent_questions">
+   <h2>Question fréquentes</h2>
+   <h4 class="title-details">Cliquez sur les questions pour plus de détails</h4>
+
+   {% for item in homeData.questions-reponses %}
+   <div class="l-question">
+      <div>
+         {{ item.question }}
+         <img class="bubble-feet-l" src="/assets/img/bubble-feet.png">
+      </div>
+   </div>
+   <div class="r-answer">
+      <div>
+         {{ item.reponse }}
+         <img class="bubble-feet-r" src="/assets/img/bubble-feet.png">
+      </div>
+   </div>
+   {% endfor %}
+
+</section>
+
+<section class="section-contact">
+   <h2>{{ homeData.contact-title }}</h2>
+   <div class="contact_wrapper">
+      <a href="mailto:mathis.barre@live.fr" class="mail-button">Directement par mail : <br> mathis.barre@live.fr</a>
+      <div class="separator">
+         <hr class="verticale">
+         <p>ou</p>
+         <hr class="verticale">
+      </div>
+      <form class="contact_form" method="POST" action="https://formspree.io/mathis.barre@live.fr">
+         <input type="email" name="email" placeholder="Votre adresse mél">
+         <textarea name="message" placeholder="Votre message"></textarea>
+         <button type="submit">Send</button>
+      </form>
+   </div>
+</section>

@@ -1,0 +1,10 @@
+collections : 
+  creations:
+    outpout: true
+
+defaults:
+  -
+    scope:
+      path: "/_creations" # an empty string here means all files in the project
+    values:
+      layout: "creations"
