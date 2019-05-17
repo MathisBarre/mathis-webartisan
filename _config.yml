@@ -1,10 +1,12 @@
-collections : 
+collections:
   creations:
-    outpout: true
+    output: true
 
 defaults:
   -
     scope:
-      path: "/_creations" # an empty string here means all files in the project
+      path: ""
+      type: "creations"
     values:
       layout: "creations"
+      optionnal-style: "/assets/style/creations.css"

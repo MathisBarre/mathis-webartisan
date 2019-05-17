@@ -1,0 +1,16 @@
+body {
+  font-size: 100%;
+}
+
+.backlink {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.creations-main {
+  width: 1050px;
+  margin: auto;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=creations.css.map */

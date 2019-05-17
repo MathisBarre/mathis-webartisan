@@ -7,6 +7,9 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet">
    <link rel="stylesheet" href="/assets/style/normalize.css">
    <link rel="stylesheet" href="/assets/style/style.css">
+   {% if page.optionnal-style %}
+   <link rel="stylesheet" href="{{page.optionnal-style}}">
+   {% endif %}
    <title>Mathis - Web Artisan | {{page.title}}</title>
 </head>
 <body>
