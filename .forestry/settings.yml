@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/homepage.json
   label: Home page customisation
-  match: "**/*"
 - type: directory
   path: _creations
   label: Creations
