@@ -34,7 +34,7 @@ layout: skeleton
    <h2>{{ homeData.creations-titre }}</h2>
    {% for creation in site.creations %}
    <div class="a_creation">
-      <div class="creation-img"></div>
+      <div class="creation-img" style="background-image: url({{ creation.url-img-preview }})"></div>
       <div class="creation-description">
          <h3>{{ creation.title }}</h3>
          <p>{{ creation.description }}</p>

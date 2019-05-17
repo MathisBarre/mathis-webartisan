@@ -137,6 +137,9 @@ section {
    border-radius: 10px;
    margin-right: 10px;
    border: solid 2px $light-purple;
+   background-position: center center;
+   background-size: contain;
+   background-repeat: no-repeat;
 }
 
 .creation-link {
