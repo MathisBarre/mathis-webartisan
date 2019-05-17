@@ -1,0 +1,16 @@
+---
+label: créations
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: client-name
+  label: client-name
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: url-img-preview
+  label: url-img-preview
