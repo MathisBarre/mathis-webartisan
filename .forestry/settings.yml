@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: _data/homepage.json
-  label: Hom - data
+  label: Home - data
 - type: directory
   path: _creations
   label: Creations
