@@ -11,6 +11,10 @@
   "question-titre": "Questions fréquentes",
   "questions-reponses": [
     {
+      "question": "",
+      "reponse": ""
+    },
+    {
       "question": "Quelles sont les tarifs ?",
       "reponse": "Les sites que je produit sont à prix libre, sous forme de don une fois le projet achevé"
     },
@@ -19,5 +23,5 @@
       "reponse": "Nous utilisons le générateur de site static jekyll, couplé avec les technologies communes à tous les site web : HTML, CSS, JS"
     }
   ],
-  "contact-title": "Intéréssé ? Contactez-moi !"
+  "contact-title": "Intéressé ? Contactez-moi !"
 }
