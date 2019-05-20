@@ -23,3 +23,5 @@ fields:
   default: assets/img
   config:
     required: true
+pages:
+- _creations/juste-un-test.md
