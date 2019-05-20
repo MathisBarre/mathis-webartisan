@@ -1,14 +1,18 @@
 {
-  "premier-titre": "Mathis Barré",
+  "titre-principal": "Mathis Barré",
   "sous-titre": "&lsaquo; Artisan du web /&rsaquo;",
   "introduction": "Je suis un jeune apprentis developpeur proposant mes service à prix libre afin de pratiquer à condition réels.",
-  "serviceq1": "Vous êtes une association ?",
-  "service-q2": "Vous êtes un.e particulier.ère ?",
-  "service-q3": "Vous êtes une petite entreprise ?",
+  "services-questions": [
+    {"question": "Vous êtes une association ?"},
+    {"question": "Vous êtes un.e particulier.ère ?"},
+    {"question": "Vous êtes une petite entreprise ?"}
+  ],
+
   "service-titre": "&lsaquo;h2&rsaquo; A la recherche d'un site web ? &lsaquo;/h2&rsaquo;",
   "service-description": "Un blog ? Un cv en ligne ? Une page pour un évenement ? Ou tout simplement un site pour votre structure avec vos informations, vos actualités, vos plannings,votre page de contact. Je peux faire tous cela !",
   "creations-titre": "Mes dernières créations",
   "question-titre": "Questions fréquentes",
+  "question-sous-titre": "",
   "questions-reponses": [
     {
       "question": "Quelles sont les tarifs ?",
@@ -23,5 +27,6 @@
       "reponse": "Avec un site statique comme ceux que je propose, vous pouvez créer, supprimer, modifier des pages / des articles et autres facilement et sur mesure. Vous pouvez aussi gérer une newsletter, des commentaires, des formulaires de contact grâce à des services externes. A l'inverse, vous ne pouvez pas utiliser mes sites pour gérer vos membres dans une base de données en ligne ou pour gérer vos finances par exemple."
     }
   ],
-  "contact-title": "Intéressé ? Contactez-moi !"
+  "contact-titre": "Intéressé ? Contactez-moi !",
+  "contact-mel": "mathis.barre@live.fr"
 }

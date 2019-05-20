@@ -6,7 +6,7 @@ layout: skeleton
 
 <section class="section-presentation">
    <div class="infos-presentations">
-      <h1>{{ homeData.premier-titre }}</h1>
+      <h1>{{ homeData.titre-principal }}</h1>
       <h2 class="subtitle">{{ homeData.sous-titre }}</h2>
       <p>{{ homeData.introduction }}</p>
    </div>
@@ -20,9 +20,9 @@ layout: skeleton
 
 <section class="section-services">
    <div class="services-questions-wrapper">
-      <p class="services-questions">{{ homeData.serviceq1 }}</p>
-      <p class="services-questions">{{ homeData.service-q2 }}</p>
-      <p class="services-questions">{{ homeData.service-q3 }}</p>
+      {% for question in homeData.services-questions %}
+      <p class="services-questions">{{ question.question }}</p>
+      {% endfor %}
    </div>
    <div class="services-description">
       <h2>{{ homeData.service-titre }}</h2>
@@ -45,8 +45,8 @@ layout: skeleton
 </section>
 
 <section class="section-frequent_questions">
-   <h2>Question fréquentes</h2>
-   <h4 class="title-details">Cliquez sur les questions pour plus de détails</h4>
+   <h2>{{ homeData.question-titre }}</h2>
+   <h4 class="title-details">{{ homeData.question-sous-titre }}</h4>
 
    {% for item in homeData.questions-reponses %}
    <div class="l-question">
@@ -66,15 +66,15 @@ layout: skeleton
 </section>
 
 <section class="section-contact">
-   <h2>{{ homeData.contact-title }}</h2>
+   <h2>{{ homeData.contact-titre }}</h2>
    <div class="contact_wrapper">
-      <a href="mailto:mathis.barre@live.fr" class="mail-button">Directement par mél : <br> mathis.barre@live.fr</a>
+      <a href="mailto:mathis.barre@live.fr" class="mail-button">Directement par mél : <br> {{contact-mel}}</a>
       <div class="separator">
          <hr class="verticale">
          <p>ou</p>
          <hr class="verticale">
       </div>
-      <form class="contact_form" method="POST" action="https://formspree.io/mathis.barre@live.fr">
+      <form class="contact_form" method="POST" action="https://formspree.io/{{contact-mel}}">
          <input type="email" name="email" placeholder="Votre adresse mél">
          <textarea name="message" placeholder="Votre message"></textarea>
          <button type="submit">Send</button>
