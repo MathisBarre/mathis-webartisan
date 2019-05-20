@@ -68,13 +68,13 @@ layout: skeleton
 <section class="section-contact">
    <h2>{{ homeData.contact-titre }}</h2>
    <div class="contact_wrapper">
-      <a href="mailto:mathis.barre@live.fr" class="mail-button">Directement par mél : <br> {{contact-mel}}</a>
+      <a href="mailto:{{homeData.contact-mel}}" class="mail-button">Directement par mél : <br> {{homeData.contact-mel}}</a>
       <div class="separator">
          <hr class="verticale">
          <p>ou</p>
          <hr class="verticale">
       </div>
-      <form class="contact_form" method="POST" action="https://formspree.io/{{contact-mel}}">
+      <form class="contact_form" method="POST" action="https://formspree.io/{{homeData.contact-mel}}">
          <input type="email" name="email" placeholder="Votre adresse mél">
          <textarea name="message" placeholder="Votre message"></textarea>
          <button type="submit">Send</button>
