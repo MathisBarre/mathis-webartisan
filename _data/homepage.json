@@ -11,6 +11,10 @@
   "question-titre": "Questions fréquentes",
   "questions-reponses": [
     {
+      "question": "Qu'est ce que je peux faire avec un site statique ?",
+      "reponse": "Avec un site statique comme ceux que je propose, vous pouvez créer, supprimer, modifier des pages / des articles et autres facilement et sur mesure. Vous pouvez aussi gérer une newsletter, des commentaires, des formulaires de contact grâce à des services externes. A l'inverse, vous ne pouvez pas utiliser mes sites pour gérer vos membres dans une base de données en ligne ou pour gérer vos finances par exemple."
+    },
+    {
       "question": "Quelles sont les tarifs ?",
       "reponse": "Les sites que je produit sont à prix libre, sous forme de don une fois le projet achevé"
     },
