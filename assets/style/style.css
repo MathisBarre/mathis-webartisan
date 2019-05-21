@@ -12,14 +12,17 @@ body {
 
 section {
   margin: 75px auto 75px auto;
-  max-width: 1150px;
+  max-width: 100vw;
   width: 1150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section-presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
 }
 
 .infos-presentations {
@@ -125,6 +128,10 @@ section {
   opacity: .8;
 }
 
+.section-creations {
+  padding: 0 30px;
+}
+
 .section-creations h2 {
   margin: 50px;
 }
@@ -182,6 +189,7 @@ section {
   font-weight: 400;
   text-align: center;
   margin: 5px;
+  margin-bottom: 20px;
 }
 
 .l-question {
@@ -264,16 +272,20 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  max-height: 75px;
 }
 
 .contact_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact_wrapper > * {
-  padding: 25px;
+  margin: 25px;
 }
 
 .contact_form {
@@ -321,5 +333,68 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media all and (max-width: 815px) {
+  .section-presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .presentation-figure {
+    max-width: 50vw;
+  }
+  .infos-presentations {
+    text-align: center !important;
+  }
+  .infos-presentations p {
+    margin: 50px;
+  }
+  .subtitle {
+    text-align: center;
+  }
+  .services-questions-wrapper {
+    display: none;
+  }
+  .services-description {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .a_creation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .a_creation > * {
+    text-align: center;
+  }
+  .verticale {
+    display: none;
+  }
+  .creation-img {
+    margin-bottom: 20px;
+  }
+  .contact_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_wrapper > * {
+    margin: 0;
+  }
+  .mail-button {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
