@@ -1,3 +1,9 @@
+description: Mathis, artisan du web. Site internet personnalisé à prix libre. Facile et pas chère. blog – association – pme - évènement
+
+
+
+# Website configurations
+
 collections:
   creations:
     output: true
