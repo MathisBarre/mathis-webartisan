@@ -4,6 +4,10 @@ description: Mathis, artisan du web. Site internet personnalisé à prix libre. 
 
 # Website configurations
 
+url: "https://mathis-webartisan.netlify.com"
+plugins:
+  - jekyll-sitemap
+
 collections:
   creations:
     output: true
