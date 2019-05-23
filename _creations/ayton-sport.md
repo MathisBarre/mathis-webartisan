@@ -13,3 +13,5 @@ url-img-preview: "/assets/img/ayton-logo-white.png"
 Ma part du travail : Design du site, intégration, hébergement, CMS
 
 ![](/assets/uploads/screenshot_ayton_sport.jpg)
+
+Adresse temporaire : [http://mania.zd.fr/ayton_sport/](http://mania.zd.fr/ayton_sport/ "http://mania.zd.fr/ayton_sport/")
