@@ -12,4 +12,4 @@ url-img-preview: "/assets/img/ayton-logo-white.png"
 
 Ma part du travail : Design du site, intégration, hébergement, CMS
 
-![Screenshot d'illustration du site internet Ayton Sport](/assets/uploads/screenshot_ayton_sport.jpg "Screenshot d'illustration du site internet Ayton Sport")
+![](screenshot_ayton_sport.jpg)
