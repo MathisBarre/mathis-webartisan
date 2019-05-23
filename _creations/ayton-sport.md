@@ -12,4 +12,4 @@ url-img-preview: "/assets/img/ayton-logo-white.png"
 
 Ma part du travail : Design du site, intégration, hébergement, CMS
 
-![](screenshot_ayton_sport.jpg)
+![](/assets/uploads/screenshot_ayton_sport.jpg)
