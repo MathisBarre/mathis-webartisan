@@ -12,7 +12,7 @@ sections:
   label: Creations
   create: all
   match: "**/*"
-upload_dir: uploads
+upload_dir: assets/uploads
 public_path: "/assets/uploads"
 front_matter_path: ''
 use_front_matter_path: false
