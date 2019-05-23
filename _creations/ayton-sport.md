@@ -8,8 +8,8 @@ url-img-preview: "/assets/img/ayton-logo-white.png"
 ---
 # {{ page.title }}
 
-  
 {{ page.description }}
 
-  
 Ma part du travail : Design du site, intégration, hébergement, CMS
+
+![](/assets/uploads/Screenshot_2019-05-23 Ayton sport.jpg)
