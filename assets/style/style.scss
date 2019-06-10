@@ -1,9 +1,15 @@
+---
+---
 $dark-grey: #504f60;
 $light-grey: #9c9ca1;
 $ultra_light-gray: #f0efff;
 $light-brown: #ae6e79;
 $purple: #6c63ff;
 $light-purple: #b3aeff;
+
+* {
+   box-sizing: border-box;
+}
 
 h2 {
    text-align: center;
@@ -98,6 +104,7 @@ section {
 .services-questions-wrapper {
    display: flex;
    flex-direction: column;
+   align-items: flex-start;
 }
 
 .services-description {
@@ -150,7 +157,7 @@ section {
    color: $light-brown;
 }
 
-.section-frequent_questions {
+.section-more_informations {
    background-color: $purple;
    padding: 10px 50px 25px 50px;
    border-radius: 20px;
@@ -303,6 +310,7 @@ section {
 
    .services-questions-wrapper {
       display: none;
+      align-items: flex-start;
    }
 
    .services-description {
