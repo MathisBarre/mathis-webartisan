@@ -16,6 +16,11 @@ h2 {
    opacity: .95!important;
 }
 
+a.js-modal-open {
+   color: inherit;
+   text-decoration: none;
+}
+
 body {
    margin: 0px;
    background-color: $ultra_light-gray;
@@ -164,13 +169,36 @@ section {
    color: white;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-
-
    h2 {
-      margin-bottom: 5px;   
+      margin-bottom: 30px;   
       opacity: .95;
    }
 
+}
+
+.infos-flex {
+   display: flex;
+   justify-content: space-around;
+
+   > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 180px;
+      height: 202px;
+      cursor: pointer;
+
+      &:hover .informations_icones {
+         height: 125px;
+      }
+   }
+}
+
+.informations_icones {
+   height: 100px;
+   transition-duration: .2s;
+   
 }
 
 .title-details {
