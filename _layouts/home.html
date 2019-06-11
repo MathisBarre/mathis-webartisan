@@ -84,35 +84,23 @@ layout: skeleton
 
 <aside id="modal_cout" class="modale" style="display:none">
    <div class="modale-wrapper js-modal-stop">
-         <!--h3 id="titlemodale1">Tarif d'une commande</!--h3>
-
-         <p>
-            Pour le moment, une commande quelque quelle soit est à prix libre. C'est-à-dire qu'il est à vous de définir le montant reversé à la fin de la commande sous forme d'un don à un particulié. Les modalités seront définies à la fin de la commande, la plupart du temps par mél.
-         </p>
-
-         <h3>Comment connaitre la valeur du services ?</h3>
-
-         <p>
-            Pour connaitre la valeur du service donné si vous voulez et si vous avez les moyens de payer le service à sa vraie valeur, voici comment faire :
-         </p>--->
-
-         {{ homeData.infos-cout}}
-         <button class="js-modal-close">Fermer la boite modale</button>
+         {{ homeData.infos-cout | markdownify  }}
+         <button class="js-modal-close modale-close">Fermer la boite modale</button>
    </div>
 </aside>
 
 
 <aside id="modal_technologies" class="modale" style="display:none">
    <div class="modale-wrapper js-modal-stop">
-         {{ homeData.infos-technologies}}
-         <button class="js-modal-close">Fermer la boite modale</button>
+         {{ homeData.infos-technologies | markdownify  }}
+         <button class="js-modal-close modale-close">Fermer la boite modale</button>
    </div>
 </aside>
 
 
 <aside id="modal_fonctionnement" class="modale" style="display:none">
    <div class="modale-wrapper js-modal-stop">
-         {{ homeData.infos-fonctionnement}}
-         <button class="js-modal-close">Fermer la boite modale</button>
+         {{ homeData.infos-fonctionnement | markdownify  }}
+         <button class="js-modal-close modale-close">Fermer la boite modale</button>
    </div>
 </aside>

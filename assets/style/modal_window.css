@@ -27,6 +27,8 @@
     animation : translateDown .5s both;
 
     border-radius: 10px;
+
+    position: relative;
 }
 
 .modale[aria-hidden="true"] {
