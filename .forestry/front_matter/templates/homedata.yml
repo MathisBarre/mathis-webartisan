@@ -71,3 +71,12 @@ fields:
     schema:
       format: markdown
   label: infos-technologies
+- name: infos-fonctionnement
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: infos-fonctionnement
