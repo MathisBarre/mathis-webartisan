@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: index.html
+  label: Index / Home
+  match: "**/*"
+- type: document
   path: _data/homepage.json
   label: Home - data
 - type: directory
