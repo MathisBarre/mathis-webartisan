@@ -1,0 +1,60 @@
+---
+label: homedata
+hide_body: true
+fields:
+- type: text
+  name: titre-principal
+  label: titre-principal
+- type: text
+  name: sous-titre
+  label: sous-titre
+- type: textarea
+  name: introduction
+  label: introduction
+- type: field_group_list
+  name: services-questions
+  label: services-questions
+  fields:
+  - type: text
+    name: question
+    label: question
+- type: text
+  name: service-titre
+  label: service-titre
+- type: textarea
+  name: service-description
+  label: service-description
+- type: text
+  name: creations-titre
+  label: creations-titre
+- type: text
+  name: question-titre
+  label: question-titre
+- type: text
+  name: question-sous-titre
+  label: question-sous-titre
+- type: field_group_list
+  name: questions-reponses
+  label: questions-reponses
+  fields:
+  - type: text
+    name: question
+    label: question
+  - type: text
+    name: reponse
+    label: reponse
+- type: text
+  name: contact-titre
+  label: contact-titre
+- type: text
+  name: contact-mel
+  label: contact-mel
+- type: text
+  name: infos-cout
+  label: infos-cout
+- type: text
+  name: infos-technologies
+  label: infos-technologies
+- type: text
+  name: infos-fonctionnement
+  label: infos-fonctionnement
