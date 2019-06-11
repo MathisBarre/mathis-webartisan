@@ -11,6 +11,10 @@ fields:
 - type: textarea
   name: introduction
   label: introduction
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 - type: field_group_list
   name: services-questions
   label: services-questions
@@ -50,11 +54,17 @@ fields:
   name: contact-mel
   label: contact-mel
 - type: text
-  name: infos-cout
-  label: infos-cout
-- type: text
   name: infos-technologies
   label: infos-technologies
 - type: text
   name: infos-fonctionnement
   label: infos-fonctionnement
+- name: info-cout
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: info-cout
