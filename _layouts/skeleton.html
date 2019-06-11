@@ -9,8 +9,9 @@
    <link rel="shortcut icon" href="assets/img/undraw_developer_activity.svg" type="image/x-icon">
 
    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,900" rel="stylesheet">
-   <link rel="stylesheet" href="assets/style/normalize.css">
-   <link rel="stylesheet" href="assets/style/style.css">
+   <link rel="stylesheet" href={{ "assets/style/normalize.css" | absolute_url }}>
+   <link rel="stylesheet" href={{ "assets/style/style.css" | absolute_url }}>
+   <link rel="stylesheet" href={{ "assets/style/modal_window.css" | absolute_url }}>
    {% if page.optionnal-style %}
    <link rel="stylesheet" href="{{page.optionnal-style}}">
    {% endif %}
@@ -19,5 +20,6 @@
 </head>
 <body>
    {{content}}
+   <script src={{ "assets/script/modal_window.js" | relative_url }}></script>
 </body>
 </html>
