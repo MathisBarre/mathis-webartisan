@@ -47,7 +47,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
 - type: textarea
   name: infos-technologies
   label: infos-technologies
@@ -56,7 +56,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
 - type: textarea
   name: infos-fonctionnement
   label: infos-fonctionnement
@@ -65,6 +65,6 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
 pages:
 - index.html
