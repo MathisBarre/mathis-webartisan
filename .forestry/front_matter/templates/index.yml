@@ -39,12 +39,30 @@ fields:
 - type: text
   name: contact-mel
   label: contact-mel
-- type: text
+- type: textarea
   name: infos-cout
   label: infos-cout
-- type: text
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: textarea
   name: infos-technologies
   label: infos-technologies
-- type: text
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: textarea
   name: infos-fonctionnement
   label: infos-fonctionnement
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
