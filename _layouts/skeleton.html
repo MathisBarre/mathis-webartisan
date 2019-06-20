@@ -17,14 +17,16 @@
    {% endif %}
 
    <title>Mathis - Web Artisan | {{page.title}}</title>
+
 </head>
+
 <body id="swup" class="transition-fade">
 
    {{content}}
 
-
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-   <script src="{{ "assets/script/modal_window.js" | relative_url }}"></script>
-   <script src="{{ "assets/script/app.js" | relative_url }}"></script>
+   <script src="{{ "assets/script/modal_window.js" | absolute_url }}"></script>
+   <script src="{{ "assets/script/app.js" | absolute_url }}"></script>
 </body>
+
 </html>
