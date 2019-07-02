@@ -4,103 +4,105 @@ layout: skeleton
 
 {% assign homeData = page %}
 
-<section class="section-presentation">
-   <div class="infos-presentations">
-      <h1>{{ homeData.titre-principal }}</h1>
-      <h2 class="subtitle">{{ homeData.sous-titre }}</h2>
-      <p>{{ homeData.introduction }}</p>
-   </div>
-   <figure class="presentation-figure">
-      <img src="/assets/img/undraw_developer_activity.svg" alt="Illustration d'un developpeur entrain de travailler">
-      <figcaption>
-         undraw.co
-      </figcaption>
-   </figure>
-</section>
-
-<section class="section-services">
-   <div class="services-questions-wrapper">
-      {% for question in homeData.services-questions %}
-      <p class="services-questions">{{ question.question }}</p>
+<main class="home">
+   <section class="section-presentation">
+      <div class="infos-presentations">
+         <h1>{{ homeData.titre-principal }}</h1>
+         <h2 class="subtitle">{{ homeData.sous-titre }}</h2>
+         <p>{{ homeData.introduction }}</p>
+      </div>
+      <figure class="presentation-figure">
+         <img src="/assets/img/undraw_developer_activity.svg" alt="Illustration d'un developpeur entrain de travailler">
+         <figcaption>
+            undraw.co
+         </figcaption>
+      </figure>
+   </section>
+   
+   <section class="section-services">
+      <div class="services-questions-wrapper">
+         {% for question in homeData.services-questions %}
+         <p class="services-questions">{{ question.question }}</p>
+         {% endfor %}
+      </div>
+      <div class="services-description">
+         <h2>{{ homeData.service-titre }}</h2>
+         <p> {{ homeData.service-description }} </p>
+      </div>
+   </section>
+   
+   <section class="section-creations">
+      <h2>{{ homeData.creations-titre }}</h2>
+      {% for creation in site.creations %}
+      <div class="a_creation">
+         <div class="creation-img" style="background-image: url({{ creation.url-img-preview }})"></div>
+         <div class="creation-description">
+            <h3>{{ creation.title }}</h3>
+            <p>{{ creation.description }}</p>
+            <a class="creation-link" href="{{ creation.url | relative_url }}">En savoir plus</a>
+         </div>
+      </div>
       {% endfor %}
-   </div>
-   <div class="services-description">
-      <h2>{{ homeData.service-titre }}</h2>
-      <p> {{ homeData.service-description }} </p>
-   </div>
-</section>
-
-<section class="section-creations">
-   <h2>{{ homeData.creations-titre }}</h2>
-   {% for creation in site.creations %}
-   <div class="a_creation">
-      <div class="creation-img" style="background-image: url({{ creation.url-img-preview }})"></div>
-      <div class="creation-description">
-         <h3>{{ creation.title }}</h3>
-         <p>{{ creation.description }}</p>
-         <a class="creation-link" href="{{ creation.url | relative_url }}">En savoir plus</a>
+   </section>
+   
+   <section class="section-more_informations">
+      <h2>Plus d'informations</h2>
+      <div class="infos-flex">
+         <a href="modal_cout" class="js-modal-open">
+            <img src="assets/img/piggy-bank.svg" alt="icone euros" class="informations_icones">
+            <h3>Coût</h3>
+         </a>
+         <a href="modal_technologies" class="js-modal-open">
+            <img src="assets/img/html-5-logo.svg" alt="icone technologies" class="informations_icones">
+            <h3>Technologies</h3>
+         </a>
+         <a href="modal_fonctionnement" class="js-modal-open">
+            <img src="assets/img/dashboard.svg" alt="icone fonctionnement" class="informations_icones">
+            <h3>Fonctionnement</h3>
+         </a>
       </div>
-   </div>
-   {% endfor %}
-</section>
-
-<section class="section-more_informations">
-   <h2>Plus d'informations</h2>
-   <div class="infos-flex">
-      <a href="modal_cout" class="js-modal-open">
-         <img src="assets/img/piggy-bank.svg" alt="icone euros" class="informations_icones">
-         <h3>Coût</h3>
-      </a>
-      <a href="modal_technologies" class="js-modal-open">
-         <img src="assets/img/html-5-logo.svg" alt="icone technologies" class="informations_icones">
-         <h3>Technologies</h3>
-      </a>
-      <a href="modal_fonctionnement" class="js-modal-open">
-         <img src="assets/img/dashboard.svg" alt="icone fonctionnement" class="informations_icones">
-         <h3>Fonctionnement</h3>
-      </a>
-   </div>
-</section>
-
-<section class="section-contact">
-   <h2>{{ homeData.contact-titre }}</h2>
-   <div class="contact_wrapper">
-      <a href="mailto:{{homeData.contact-mel}}" class="mail-button">Directement par mél : <br> {{homeData.contact-mel}}</a>
-      <div class="separator">
-         <hr class="verticale">
-         <p>ou</p>
-         <hr class="verticale">
+   </section>
+   
+   <section class="section-contact">
+      <h2>{{ homeData.contact-titre }}</h2>
+      <div class="contact_wrapper">
+         <a href="mailto:{{homeData.contact-mel}}" class="mail-button">Directement par mél : <br> {{homeData.contact-mel}}</a>
+         <div class="separator">
+            <hr class="verticale">
+            <p>ou</p>
+            <hr class="verticale">
+         </div>
+         <form class="contact_form" method="POST" action="https://formspree.io/{{homeData.contact-mel}}">
+            <input type="email" name="email" placeholder="Votre adresse mél">
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+         </form>
       </div>
-      <form class="contact_form" method="POST" action="https://formspree.io/{{homeData.contact-mel}}">
-         <input type="email" name="email" placeholder="Votre adresse mél">
-         <textarea name="message" placeholder="Votre message"></textarea>
-         <button type="submit">Envoyer</button>
-      </form>
-   </div>
-</section>
-
-
-<!-- BOITES MODALES --->
-
-<aside id="modal_cout" class="modale" style="display:none">
-   <div class="modale-wrapper js-modal-stop">
-         {{ homeData.infos-cout | markdownify  }}
-         <button class="js-modal-close modale-close">Fermer la boite modale</button>
-   </div>
-</aside>
-
-
-<aside id="modal_technologies" class="modale" style="display:none">
-   <div class="modale-wrapper js-modal-stop">
-         {{ homeData.infos-technologies | markdownify  }}
-         <button class="js-modal-close modale-close">Fermer la boite modale</button>
-   </div>
-</aside>
-
-
-<aside id="modal_fonctionnement" class="modale" style="display:none">
-   <div class="modale-wrapper js-modal-stop">
-         {{ homeData.infos-fonctionnement | markdownify  }}
-         <button class="js-modal-close modale-close">Fermer la boite modale</button>
-   </div>
-</aside>
+   </section>
+   
+   
+   <!-- BOITES MODALES --->
+   
+   <aside id="modal_cout" class="modale" style="display:none">
+      <div class="modale-wrapper js-modal-stop">
+            {{ homeData.infos-cout | markdownify  }}
+            <button class="js-modal-close modale-close">Fermer la boite modale</button>
+      </div>
+   </aside>
+   
+   
+   <aside id="modal_technologies" class="modale" style="display:none">
+      <div class="modale-wrapper js-modal-stop">
+            {{ homeData.infos-technologies | markdownify  }}
+            <button class="js-modal-close modale-close">Fermer la boite modale</button>
+      </div>
+   </aside>
+   
+   
+   <aside id="modal_fonctionnement" class="modale" style="display:none">
+      <div class="modale-wrapper js-modal-stop">
+            {{ homeData.infos-fonctionnement | markdownify  }}
+            <button class="js-modal-close modale-close">Fermer la boite modale</button>
+      </div>
+   </aside>
+</main>

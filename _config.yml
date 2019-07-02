@@ -20,3 +20,6 @@ defaults:
     values:
       layout: "creations"
       optionnal-style: "/assets/style/creations.css"
+
+sass:
+    sass_dir: "assets/style/_sass"

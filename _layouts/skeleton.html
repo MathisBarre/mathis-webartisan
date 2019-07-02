@@ -12,19 +12,19 @@
    <link rel="stylesheet" href="{{ "assets/style/normalize.css" | absolute_url }}">
    <link rel="stylesheet" href="{{ "assets/style/style.css" | absolute_url }}">
    <link rel="stylesheet" href="{{ "assets/style/modal_window.css" | absolute_url }}">
-   {% if page.optionnal-style %}
-   <link rel="stylesheet" href="{{page.optionnal-style}}">
-   {% endif %}
 
    <title>Mathis - Web Artisan | {{page.title}}</title>
 
 </head>
 
-<body id="swup" class="transition-fade">
+<body>
 
-   {{content}}
+   <div class="content">
+      {{content}}
+   </div>
 
-   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+   <div class="lds-facebook"><div></div><div></div><div></div></div>
+
    <script src="{{ "assets/script/modal_window.js" | absolute_url }}"></script>
    <script src="{{ "assets/script/app.js" | absolute_url }}"></script>
 </body>
