@@ -73,9 +73,9 @@ layout: skeleton
             <hr class="verticale">
          </div>
          <form class="contact_form" method="POST" action="https://formspree.io/{{homeData.contact-mel}}">
-            <input type="email" name="email" placeholder="Votre adresse mél">
-            <textarea name="message" placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
+            <input type="email" name="email" placeholder="Votre adresse mél" required="true">
+            <textarea name="message" placeholder="Votre message" required="true"></textarea>
+            <input type="submit" value="Envoyer">
          </form>
       </div>
    </section>
