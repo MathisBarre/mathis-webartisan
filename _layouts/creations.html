@@ -1,7 +1,13 @@
 ---
 layout: skeleton
 ---
-<a class="backlink" href="/index.html"> &lsaquo;- Go back</a>
 <main class="creations-main">
-   {{ content }}
+   <a class="backlink" href="/index.html"> <img class="turnbackArrow" src="/assets/img/left-arrow.svg"> Retour à la page d'accueil</a>
+   <div class="creation-infobox">
+      <h1>{{page.title}}</h1>
+      <p><strong>Type :</strong> {{page.type}}</p>
+      <p><strong>Part du travail</strong> {{page.part-du-travail}}</p>
+      <p><strong>URL du site :</strong> <a href="{{page.url-creation}}">{{page.url-creation}}</a></p>
+   </div>
+   <iframe class="look" src="{{page.url-creation}}" frameborder="0"></iframe>
 </main>

@@ -1,19 +1,28 @@
-
+html,body {
+   min-height: 100vh;
+}
 .creations-main {
    width: 1050px;
    max-width: 100vw;
    margin: auto;
-   margin-top: 50px;
-
-   img {
-      width: 100%;
-      max-width: 100%;
-      max-width: 100vw;
-   }
+   padding-top: 50px;
 }
 
 .backlink {
-   position: absolute;
-   top: 10px;
-   left: 10px;
+   text-decoration: none;
+   color: black;
+}
+
+.turnbackArrow {
+   height: 12px;
+   float: left;
+   position: relative;
+   top: 3px;
+   margin-right: 5px;
+
+}
+
+.look {
+   width: 100%;
+   min-height: 600px;
 }
