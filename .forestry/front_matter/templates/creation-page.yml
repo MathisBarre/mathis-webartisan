@@ -1,0 +1,27 @@
+---
+label: Creation page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: client-name
+  label: client-name
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: url-img-preview
+  label: url-img-preview
+- type: text
+  name: url-creation
+  label: url-creation
+- type: text
+  name: part-du-travail
+  label: part-du-travail
+- type: text
+  name: type
+  label: type
+pages:
+- _creations/enoa.md
