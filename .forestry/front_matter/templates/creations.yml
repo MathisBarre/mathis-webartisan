@@ -17,11 +17,10 @@ fields:
   label: description
   config:
     required: true
-- type: text
-  name: url-img-preview
-  label: url-img-preview
-  default: assets/img
+- name: url-img-preview
+  type: file
   config:
-    required: true
+    maxSize: 250
+  label: url-img-preview
 pages:
 - _creations/enoa.md
