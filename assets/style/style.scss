@@ -9,6 +9,17 @@ $light-brown: #ae6e79;
 $purple: #6c63ff;
 $light-purple: #b3aeff;
 
+.siteoutdated {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 7px;
+  background-color: rgb(255, 93, 93);
+  color: black;
+  text-align: center;
+}
+
 * {
    box-sizing: border-box;
 }
